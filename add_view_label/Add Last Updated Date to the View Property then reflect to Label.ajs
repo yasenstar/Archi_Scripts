@@ -1,0 +1,20 @@
+﻿/*
+ * Objective: 
+ *  add Label to a view, and able to run and refresh the label text to the format "updated at 2021/5/11",
+ *  in which 2011/5/11 is the current date;
+ *  the approach is recommended from JB, using the property in the view and ensure the select the View.
+ * Date: 2022-07-07
+ * Ref: https://forum.archimatetool.com/index.php?topic=1017.msg5472#msg5472
+ */
+ 
+current_datetime = new Date();
+// formatted_date = "Last Updated at " + current_datetime.getFullYear() + "/" + (current_datetime.getMonth() + 1) + "/" + current_datetime.getDate();
+formatted_date = current_datetime.getFullYear() + "/" + (current_datetime.getMonth() + 1) + "/" + current_datetime.getDate();
+
+// here need to select the View
+$(selection).prop("Last Updated", formatted_date);
+$(selection).prop("Last Updated by", "Xiaoqi Zhao");
+
+console.log(formatted_date);
+
+// put $view{property:Last Update} as the expression of the Label
