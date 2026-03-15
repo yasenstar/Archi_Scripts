@@ -4,6 +4,7 @@
  *  in which 2011/5/11 is the current date;
  *  the approach is recommended from JB, using the property in the view and ensure the select the View.
  * Date: 2022-07-07
+ * By: Xiaoqi Zhao
  * Ref: https://forum.archimatetool.com/index.php?topic=1017.msg5472#msg5472
  */
  
@@ -13,7 +14,7 @@ formatted_date = current_datetime.getFullYear() + "/" + (current_datetime.getMon
 
 // here need to select the View
 $(selection).prop("Last Updated", formatted_date);
-$(selection).prop("Last Updated by", "Xiaoqi Zhao");
+$(selection).prop("Last Updated by", "[Your Name]");
 
 console.log(formatted_date);
 
